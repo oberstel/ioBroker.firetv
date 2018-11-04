@@ -112,7 +112,11 @@ var usedStateNames = {
     home:               { n: 'keys.home',   val: false, common: { min: false, max: true, code: adb.Keycode.KEYCODE_HOME }},
     back:               { n: 'keys.back',   val: false, common: { min: false, max: true, code: adb.Keycode.KEYCODE_BACK }},
     menu:               { n: 'keys.menu',   val: false, common: { min: false, max: true, code: adb.Keycode.KEYCODE_MENU }},
-    escape:             { n: 'keys.escape', val: false, common: { min: false, max: true, code: adb.Keycode.KEYCODE_ESCAPE}}
+    escape:             { n: 'keys.escape', val: false, common: { min: false, max: true, code: adb.Keycode.KEYCODE_ESCAPE}},
+    play_pause:         { n: 'input keyevent 85', val: false, common: { min: false, max: true, code: adb.Keycode.KEYCODE_PLAY_PAUSE}},
+    
+    firetv_os           { n: 'shell getprop ro.build.version.name',  val: '',    common: { write: false }},
+    firetv_serial       { n: 'shell getprop ro.serialno',  val: '',    common: { write: false }},
 };
 for (var i in usedStateNames) {
     var o = usedStateNames[i];
