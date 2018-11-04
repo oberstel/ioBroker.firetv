@@ -20,6 +20,10 @@ E.g.:
 - reboot
 - excute shell commands
 
+Furthermore, the adapter gives the following information
+- Device Infos like Fire OS Version
+- etc.
+
 #### Some Infos
 This adapter uses functions of the "Android Debug Bridge", known as "adb". Adb is part of the Android Developer SDK. Because Fire TV has an Android operating system, it can be controlled by adb.
 
